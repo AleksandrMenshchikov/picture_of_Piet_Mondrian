@@ -11,6 +11,6 @@
 
 **Сайт**
 
-* [Ссылка на сайт](README.md)
+* [Ссылка на сайт](https://aleksandrmenshchikov.github.io/picture_of_Piet_Mondrian/index.html)
 
 
