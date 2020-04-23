@@ -1,6 +1,5 @@
-.popup__btn {
+.message__btn {
   border-radius: 10px;
-  margin-top: 20px;
   outline: none;
   cursor: pointer;
 }

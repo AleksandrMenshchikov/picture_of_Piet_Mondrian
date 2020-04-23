@@ -17,7 +17,9 @@
   background-color: black;
   top: 50%;
   left: 15%;
+  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
+  -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
 
@@ -29,10 +31,13 @@
   background-color: black;
   top: 50%;
   left: 15%;
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+  -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
 
-.popup__close:hover.popup__close::after, .popup__close:hover.popup__close::before {
+.popup__close:hover.popup__close::after,
+.popup__close:hover.popup__close::before {
   background-color: #43a6e2;
 }

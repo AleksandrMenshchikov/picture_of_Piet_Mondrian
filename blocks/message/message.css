@@ -1,0 +1,44 @@
+@import "./__btn/message__btn.css";
+
+@-webkit-keyframes slider {
+  0% {
+    top: -60%;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes slider {
+  0% {
+    top: -60%;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.message {
+  position: absolute;
+  width: 80%;
+  height: 40vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: auto;
+  z-index: 2;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  -webkit-animation: slider 2s ease 0s 1 normal none;
+  animation: slider 2s ease 0s 1 normal none;
+}

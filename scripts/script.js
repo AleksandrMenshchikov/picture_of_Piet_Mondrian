@@ -24,7 +24,9 @@ class ChangeBackgroundColor {
     popupColorInput,
     classOfgridContainerItem,
     classOfPopupClose,
-    classOfPopupBtn
+    classOfPopupBtn,
+    classOfmessageBtn,
+    message
   ) {
     this.page = page;
     this.popup = popup;
@@ -33,6 +35,8 @@ class ChangeBackgroundColor {
     this.classOfgridContainerItem = classOfgridContainerItem;
     this.classOfPopupClose = classOfPopupClose;
     this.classOfPopupBtn = classOfPopupBtn;
+    this.classOfmessageBtn = classOfmessageBtn;
+    this.message = message;
     this.handlerEvent = this.handlerEvent();
   }
 
@@ -49,6 +53,9 @@ class ChangeBackgroundColor {
         this.gridContainerItem.style.backgroundColor = this.popupColorInput.value;
         this.popup.style.display = "none";
       }
+      if (e.target.classList.contains(this.classOfmessageBtn)) {
+        this.message.style.display = 'none';
+      }
     });
   }
 }
@@ -59,5 +66,7 @@ const changeBackgroundColor = new ChangeBackgroundColor(
   document.querySelector(".popup__color-input"),
   "grid-container__item",
   "popup__close",
-  "popup__btn"
+  "popup__btn",
+  "message__btn",
+  document.querySelector(".message")
 );
