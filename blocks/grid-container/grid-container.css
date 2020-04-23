@@ -1,0 +1,12 @@
+@import "./__item/grid-container__item.css";
+
+.grid-container {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 0.1fr 0.13fr 0.13fr 0.26fr 0.18fr 0.16fr auto;
+  grid-template-rows: 0.11fr 0.28fr 0.26fr 0.11fr 0.13fr 0.08fr 0.04fr;
+  height: 100vh;
+}
+

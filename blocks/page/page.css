@@ -1,0 +1,8 @@
+.page {
+    max-width: calc(100vh);
+    margin: 0 auto;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    position: relative;
+}
